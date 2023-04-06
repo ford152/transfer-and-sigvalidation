@@ -1,14 +1,19 @@
 ## ECDSA Node
 
-This project is an example of using a client and server to facilitate transfers between different addresses. Since there is just a single server on the back-end handling transfers, this is clearly very centralized. We won't worry about distributed consensus for this project.
+This is my updated version of the "ECDSA Node" project that includes:
+* Using Ethereum style wallet addresses
+* Signing a send transaction and verifying the signature on the server
 
-However, something that we would like to incoporate is Public Key Cryptography. By using Elliptic Curve Digital Signatures we can make it so the server only allows transfers that have been signed for by the person who owns the associated address.
 
-### Video instructions
-For an overview of this project as well as getting started instructions, check out the following video:
-
-https://www.loom.com/share/0d3c74890b8e44a5918c4cacb3f646c4
- 
+### Private Keys and Wallet Addresses for Testing
+private key 98c9cc2d81a4efe65d0bc6e1c32529da9f640405d8eef46c30fb501c45cc925c  
+wallet addr d4977ab47942b129ce01a9d759fe0dba74aec24d  
+  
+private key 28466e5578ce702e3f40b9d286035486ec8e633742466bc3812097b4b401a949  
+wallet addr b033ee21dc616aeadf6c21f66552c273f02e3637  
+  
+private key 2fb0789489809439a93d6d8baaa92c44ce846efcc8b8b691f02d7b72560702a7  
+wallet addr 4822b0370aa8f211e7558b9a881f9b19a8cff8ed  
 ### Client
 
 The client folder contains a [react app](https://reactjs.org/) using [vite](https://vitejs.dev/). To get started, follow these steps:
